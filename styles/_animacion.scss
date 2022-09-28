@@ -1,0 +1,118 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.wrapper {
+    display: inline-flex;
+}
+.wrapper .static-txt {
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+}
+.wrapper .dynamic-txts {
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    margin-left: 20px;
+    
+}
+.dynamic-txts li {
+    list-style: none;
+    font-size: 60px;
+    position: relative;
+    font-weight: 500;
+    color: #fc6d6d;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+    margin-left: -30px;
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+.dynamic-txts li span {
+    position: relative;
+}
+.dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #fc6d6d;
+    left: 0;
+    animation: typing 3s steps(20) infinite;
+    background: #343f4f;
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+@media screen and (max-width:991px) {
+    .Space {
+        display: none;
+    }
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    .wrapper {
+        display: list-item;
+        list-style: none;
+    }
+    .wrapper .static-txt {
+        color: white;
+        font-size: 30px;
+        font-weight: 400;
+        text-align: center;
+    }
+    .wrapper .dynamic-txts {
+        height: 90px;
+        line-height: 90px;
+        overflow: hidden;
+        
+    }
+    .dynamic-txts li {
+        list-style: none;
+        font-size: 30px;
+        position: relative;
+        font-weight: 500;
+        color: #fc6d6d;
+        text-align: start;
+        top: 0;
+        animation: slide 12s steps(4) infinite;
+    }
+    @keyframes slide {
+        100%{
+            top: -360px;
+        }
+    }
+    .dynamic-txts li span {
+        position: relative;
+    }
+    .dynamic-txts li span::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-left: 2px solid #fc6d6d;
+        left: 0;
+        animation: typing 3s steps(20) infinite;
+        background: #343f4f;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    @keyframes typing {
+        100%{
+            left: 100%;
+          
+        }
+    }
+}

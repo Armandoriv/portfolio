@@ -1,0 +1,85 @@
+.Contacto {
+    .form{
+        background-color:#213047 ;
+        width: 90%;
+        max-width: 700px;
+        border-radius: 1em;
+        padding: 3.5em 1.5em;
+        margin: auto;
+        opacity: .90;
+        .form_container {
+            width: 100%;
+            display: grid;
+            gap: 1em;
+            grid-auto-columns: 100%;
+            .form_input {
+                font-family: inherit;
+                font-size: 1rem;
+                padding: .8em 1em;
+                outline: none;
+                border: none;
+                border: 1px solid #343f4f;
+                border-radius: 0.2em;
+                background-color: #343f4f;
+                color: white;
+            }
+            .form_input--message {
+                resize: none;
+                padding: 1.8em 1em;
+                margin-bottom: .5em;
+                color: white;
+            }
+        }
+    }
+    .boton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form_cta {
+            position: relative;
+            display: inline-flex;
+            padding: 10px 30px;
+            background: gray;
+            color: white;
+            text-decoration: none;
+            border: none;
+            overflow: hidden;
+            border-radius: 20px;
+        }
+        .form_cta span {
+            position: relative;
+            z-index: 1;
+        }
+        .form_cta::before {
+            content: "";
+            position: absolute;
+            top: var(--y);
+            left: var(--x);
+            transform: translate(-50%,-50%);
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: #fc6d6d;
+            transition: width 0.5s, height 0.5s;
+            
+
+        }
+        .form_cta:hover::before {
+            width: 250px;
+            height: 250px;
+
+        }
+
+    }
+    .contactoLogos {
+        display: flex;
+        justify-content: space-around;
+        .contactoimg {
+            height: 50px;
+            width: 50px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+    }
+}
+

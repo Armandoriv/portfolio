@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: block;
+}
+.letras {
+    margin-top: 50px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:#343f4f ;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, .2);
+    transition: ease-in-out 0.5s;
+    .nombre {
+        color: white;
+      
+    }
+    .li {
+        color: white;
+        
+    }
+    .nombre:hover {
+        color: #FC6D6D;
+    }
+    .li:hover{
+        color: #FC6D6D;
+    }
+}
+.logos {
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+    
+}
+.pepo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-top: 50px;
+}
+.footer {
+    width: 100%;
+    text-align: center;
+    vertical-align: bottom;
+    height: 20px;
+    .copyright {
+        font-size: 10px;
+        font-weight: 600;
+        color: white;
+        margin-top: 10px
+        
+    }
+}
+body::-webkit-scrollbar {
+    width: 7px;
+    background: #343f4f;
+}
+body::-webkit-scrollbar-thumb {
+    background: #FC6D6D;
+    border-radius: 5px;
+}
+.meme {
+    display: flex;
+    justify-content: center;
+}
+.center{
+    text-align: center;
+    color: white;
+}
+#space-invaders {
+  margin: 0 auto;
+  display: block;
+}
+@media screen and (max-width:991px) {
+   
+}
+@import "./particulas";
+@import "./animacion";
+@import "./sobremi";
+@import "./contacto";
+@import "./proyectos";
